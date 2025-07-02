@@ -1,0 +1,5 @@
+let someFun=require("./index")
+console.log(someFun)
+let res1=someFun.sum(2,3)
+let res2=someFun.sub(3,2)
+console.log(res1,res2)
