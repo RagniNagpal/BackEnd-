@@ -1,0 +1,19 @@
+package-> having package.json file
+module-> dont have package.json file
+
+npm (dont have full form) creates package, install package, publish package
+
+npm ki khud ki repo hai jismei saara packages available hai 
+
+//make package commands
+1. npm init
+2. npm i express
+ npm login
+ npm publish --access=public 
+
+//transitive-dependency-> agar express code run karne ha to vo khud bhi depend karta h baki dependies par to unka code bhi chahiye to unka code node modules mei hota hai
+//dependies ka code node modules ek andar hota hai
+
+// diffrence bw dependency and dev-dependency
+dependency	Required to run the app in production
+devDependency	Required only during development, not in production
