@@ -1,0 +1,25 @@
+Callback -> to handle asynchronous opeartion
+function PurchaseProduct(Product-Name){
+  do some syanc work
+  1. get product data from db
+  2. write order data on user and uses 
+}
+
+purchaseProduct(iphone 16)
+clg(:done);
+ sabhse pahele clg chalega
+
+
+ productPurchase("Iphone 16",function(){
+  clg("product and purchased);
+ })
+
+ //Error first callback-> first arguments always be error
+
+ //Promise-> promise is an object which represent eventual completion or failure of an asynchronous operation
+ 3 states=>  pending , fulfilled, rejected
+ agar fulfilled-> .then(()=>{})
+ agar rejected-> .catch
+
+ //javascript mei multiple catch nhi hote h 
+ //.then .then bohot aur ek .catch to kahete h promise chaining
