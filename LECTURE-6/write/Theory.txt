@@ -1,0 +1,15 @@
+File system: built in module (node js)
+1. fs module
+built in mein path ki jarurat nhi hotii
+par jab ham khud bnate h to zarurat hoti hai
+The Buffer class is a global type for dealing with binary data directly. It can be constructed in a variety of ways.
+agar ham utf-8 nhi likhenge to buffer form mei aaega .....utf-8 likhenege to human read form mri aaega
+
+agar ham 2 files saath bnade to jo file ka size chota hoga vo pahele read ho jaegiii
+
+Read and write file are async
+
+//terminal ka input process.argv se read hota hai 
+//terminal ke argument aate h (input lena)
+console.log(process.argv);
+console.log(process.argv[3]);
