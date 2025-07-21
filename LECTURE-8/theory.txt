@@ -1,0 +1,32 @@
+by default js use common js .......so we use require 
+
+Client server Architecture
+Client-sends request
+Server- Processes those requests and sends back the response
+
+server bhi client ho sakta hai....jab server requests bheje
+why node js as runtime-> agar ham browser par js cahhlaye par browser par saara data show hoga  backend ka saara data ham secure rakhte h ....isliye ek system chahiye .
+
+server jsb run hoga tabhi client response le sakta hai
+ports are communication end points-> physical(USB) and virtual(having numbers-1200 to 1500 >  baki pahele se used ho sakte h kuch predefined hote h ) port
+
+http is protocol, facebook.com is domain name , / is end point
+domain par jaega ip address lekar aaega phir chalega
+
+tyes of request-> get, post,patch,delete,put resource ko add karne ke liye...like all these 
+types of response-> text,html,file,json
+
+//res.send mei response header set hokar jata h aur res.end mei nhi jata
+
+path variable-> variable mei koi bhi cheez agar variable aa rhi h to 
+
+query parameters and 
+http://localhost:3012/watch?v=123fcdes=> id got it output aarha h
+http://localhost:3012/watch?v=123fcdes&n=hiiiiiiiiiii
+params
+http://localhost:3012/watch/123
+
+[Object: null prototype] { v: '123' }output with clg
+
+http://localhost:3001/watch/abc123/video/5
+http://localhost:3001/watch/abc123 yahn tak path/video/5 variable
