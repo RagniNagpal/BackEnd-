@@ -1,0 +1,7 @@
+serving static/public file
+browser(client)                                             server(frontend/backend)
+
+//index.html,css,js-> no app logic nothing so called static file(frontend (design))
+
+agar browser ko html bhi chahiye to bhi request karni padegiii
+sabhkuch server par padha hua h
