@@ -1,0 +1,18 @@
+DOM-> Document object model
+browser hamko api provide karta h document api... -> window object
+fetch,props,console,settimeout are also apis
+
+document api->html/xml make dom tree
+Document
+html
+head   (all are nodes)                      body
+meta links js               div       ul        image 
+                          h1 para
+
+ham document ki help se saara html create kar sakte h
+
+id access-> item milta h1
+class -> collection milti h ....kyunki class multiple ho sakti h
+hamko class name se access nhi karna chahiye
+
+query sel mei ham teeno cheeze pass kar sakte h class to dot , # ,tag bhi
