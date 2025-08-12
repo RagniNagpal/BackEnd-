@@ -77,14 +77,17 @@ buyProduct("Iphone 16", function (err, amount) {
 
 //disadv of call back
 //ek call back hell aur dursa
+//inversion of control-> kisi aur ke paas handle hai
 //agar galti se 2 baar call hogii to dikkat h -> no control jisne function ko bnaya h usse galti hui h hamse nhi .
 
 
 //using
-const fs=require("fs");
-fs.readFile("filepath","utf-8",function(err,data){
+// const fs=require("fs");
+// fs.readFile("filepath","utf-8",function(err,data){
 
-})
+// })
+
+
 
 
 
