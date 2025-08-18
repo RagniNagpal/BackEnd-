@@ -1,0 +1,6 @@
+blog delete & update blog 
+
+sirf user apne hi blog ko delete kar sakta hai jaise insta pe hum sirf apni hi post ko delete or update kar pate hai 
+toh isliye hamen blog ko update or delete karne ke liye userId or blogid chahiye hogi 
+
+sirf get request mai body nhi aati hai baki sabhi requests mai body aati hai, or delete bhi post ki tarah hi hai
