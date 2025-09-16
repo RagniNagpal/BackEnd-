@@ -1,0 +1,9 @@
+npm init -y
+npm i prisma
+npx prisma init
+npx prisma migrate dev --name init
+ npx prisma migrate dev --name "create tweet table and map with user table"
+ agar error 
+You may use prisma migrate reset to drop the development database.
+All data will be lost.
+then => npx prisma migrate reset
