@@ -1,0 +1,6 @@
+npm init -y
+npm i ws
+postwomen chalake dekho 
+
+//postman
+ws://localhost:8888          for connection
