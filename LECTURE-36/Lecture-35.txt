@@ -1,0 +1,7 @@
+reddis   yaad dilvane ke liye
+
+reddis , docker karna hai
+pubsub
+
+
+postman se baar baar request bhi polling

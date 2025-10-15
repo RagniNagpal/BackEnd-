@@ -1,0 +1,5 @@
+npm bull is a lib to implement message queue
+npm i bullmq
+
+//cmd
+docker ps
