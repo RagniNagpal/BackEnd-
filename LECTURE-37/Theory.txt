@@ -1,0 +1,3 @@
+Singleton pattern:
+LOw level designs
+when we want only one object of a class to be created
