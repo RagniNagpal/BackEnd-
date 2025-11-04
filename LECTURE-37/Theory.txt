@@ -1,3 +1,9 @@
+monolithic, microservices
 Singleton pattern:
 LOw level designs
 when we want only one object of a class to be created
+
+
+web socket-> not easily scalable
+polling-> network overload
+pub/sub
