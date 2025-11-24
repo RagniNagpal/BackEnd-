@@ -1,0 +1,273 @@
+Version Control system
+
+without Git/github
+1. create new folder for each update   Dis adv Storage
+2. gpt comment karo purana naya neeche paste
+
+
+Types of version control 
+1. Centralised  
+: problem if code gets deletd there is no way to get it back, concurrency, regular internet connection
+2. Distributed eg- git
+
+Basic Git commands
+1. what is repository?
+-> folder
+2. how to initialize?
+1. In terminal switch to Git bash
+-> git init (empty git repo)
+ls 
+ls -a (hidden files) op  ./  ../  .git/
+
+how to create a version
+make npm init -y , npm i mongoose express, index .js and add some code 
+
+code and version controll bw is stagging layer >
+ye kahaeta hai ki jis bhi code ka history maintain karna hai sabhse pahele stagging area mei bhejo
+before U (Untracked)
+git status  M(modified)
+before every command check git status
+ then git add file_name tehn A(tracked)
+
+version sirf usi ka bnaga jo stagging area mei ahi 
+abb bnaeyenge commit some
+agar git commit likhenge to error nhi aaega vhi insert to I aur bahar nikalna hai to esc :wq
+
+isse bhi commit ho jata hai
+git commit -m "Status of project"
+
+// now making model
+
+git add . dot means current directory
+
+how to check history all  versions =>  git log
+
+git diff se differnece 2 commit ke beech ka
+
+git ke andar idhar se udhar karna hai -> git checkout
+
+branch mei jana hai to branch ka file_name//
+
+git checkout commit id previos vala aagya naya vala gayab 
+
+now git branch
+
+latest vale kaan vahi hota hai jo btranch ka naame hai mainm/ mastre
+
+$ git checkout master
+Switched to branch 'master'
+M       index.js
+
+branching = >>
+
+what if multiple people or developer are working?
+rules hote h branch ke names ke liye
+Node: zaruri nhi hai ham commit tabhi kare jab poora klaam ho jaye
+
+
+
+24 Nov Full work
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (master)
+$ git init
+Initialized empty Git repository in C:/Users/hp/Desktop/LearnGit/.git/
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (master)
+$ ls
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (master)
+$ ls -a
+./  ../  .git/
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (master)
+$ npm init -y
+Wrote to C:\Users\hp\Desktop\LearnGit\package.json:
+
+{
+  "name": "learngit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
+
+
+
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (master)
+$ npm i mongoose express
+
+added 83 packages, and audited 84 packages in 10s
+
+19 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.js
+        node_modules/
+        package-lock.json
+        package.json
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (master)
+$ git add index.js
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (master)
+$ git add index.js
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage) 
+        new file:   index.js
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        node_modules/
+        package-lock.json
+        package.json
+
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (master)
+$ git add index.js
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (master)
+$ git commit -m "Status of project"
+[master (root-commit) 5cc8316] Status of project
+ 1 file changed, 26 insertions(+)
+ create mode 100644 index.js
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (master)
+$ git add model/
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   model/UserModel.js
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        node_modules/
+        package-lock.json
+        package.json
+
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (master)
+$ git commit -m "Model created"
+[master 003ff14] Model created
+ 1 file changed, 11 insertions(+)
+ create mode 100644 model/UserModel.js
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        node_modules/
+        package-lock.json
+        package.json
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (master)
+$ git add model/
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (master)
+$ git commit -m "Model added"
+[master d0777df] Model added
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (master)
+$ git log
+commit d0777df64efc73ef747f6476d70b140f0c91e37d (HEAD -> master)
+Date:   Mon Nov 24 15:05:07 2025 +0530
+
+    Model added
+
+commit 003ff14aa4a07a8804689651fbfc69a3ed860871
+Author: RagniNagpal <ragninagpal@gmail.com>
+Date:   Mon Nov 24 15:02:31 2025 +0530
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (master)
+$ git checkout d0777df64efc73ef747f6476d70b140f0c91e37d
+Note: switching to 'd0777df64efc73ef747f6476d70b140f0c91e37d'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at d0777df Model added
+M       index.js
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit ((d0777df...))
+$ git log
+commit d0777df64efc73ef747f6476d70b140f0c91e37d (HEAD, master)
+Author: RagniNagpal <ragninagpal@gmail.com>    
+Date:   Mon Nov 24 15:05:07 2025 +0530
+
+    Model added
+
+commit 003ff14aa4a07a8804689651fbfc69a3ed860871
+Author: RagniNagpal <ragninagpal@gmail.com>    
+Date:   Mon Nov 24 15:02:31 2025 +0530
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit ((d0777df...))
+$ git branch
+* (HEAD detached at d0777df)
+  master
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit ((d0777df...))
+$ git checkout master
+Switched to branch 'master'
+M       index.js
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (master)
+$
