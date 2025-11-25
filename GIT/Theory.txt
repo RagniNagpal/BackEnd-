@@ -271,3 +271,348 @@ M       index.js
 
 hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (master)
 $
+
+
+
+ 25 Nov Full work here
+ faet/u + tab poora aajaega
+
+ branching 
+ hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit ((d0777df...))
+$ git branch
+* (HEAD detached at d0777df)
+  master
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit ((d0777df...))
+$ git checkout master
+Switched to branch 'master'
+M       index.js
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (master)
+$
+ *  History restored 
+
+
+ *  History restored 
+
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (master)
+$ 
+ *  History restored 
+
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (master)
+$ git branch feat/user_routes
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (master)
+$ git branch
+  feat/user_routes
+* master
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (master)
+$ git checkout feat/user_routes 
+Switched to branch 'feat/user_routes'
+M       index.js
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (feat/user_routes)
+$ git branch
+* feat/user_routes
+  master
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (feat/user_routes)
+$ git checkout -b feat/blog_routes
+Switched to a new branch 'feat/blog_routes'
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (feat/blog_routes)
+$ git branch
+* feat/blog_routes
+  feat/user_routes
+  master
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (feat/blog_routes)
+$ git branch -d feat/
+feat/blog_routes   feat/user_routes 
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (feat/blog_routes)
+$ git branch -d feat/
+feat/blog_routes   feat/user_routes 
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (feat/blog_routes)
+$ git branch -d feat/blog_routes
+error: cannot delete branch 'feat/blog_routes' used by worktree at 'C:/Users/hp/Desktop/LearnGit'
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (feat/blog_routes)
+$ git checkout master
+Switched to branch 'master'
+M       index.js
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (master)
+$ git branch -d faet/blog_routes
+error: branch 'faet/blog_routes' not found
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (master)
+$ git branch
+  feat/blog_routes
+  feat/user_routes
+* master
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (master)
+$ git branch -d feat/blog_routes
+Deleted branch feat/blog_routes (was d0777df).
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (master)
+$ git branch -M main
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (main)
+$ git branch
+  feat/user_routes
+* main
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (main)
+$
+
+
+main ko merge karo apni branch k saath main ka blog mei aajaega abb main vala kuch nhi kar rha ahi resolve conflict bhi blog vala kar rha ahi thyen come to merge and no conflict successfully merge ..............abb mujhe commands do kaise hoga
+
+
+
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit ((d0777df...))
+$ git log
+commit d0777df64efc73ef747f6476d70b140f0c91e37d (HEAD, master)
+Author: RagniNagpal <ragninagpal@gmail.com>    
+Date:   Mon Nov 24 15:05:07 2025 +0530
+
+    Model added
+
+commit 003ff14aa4a07a8804689651fbfc69a3ed860871
+Author: RagniNagpal <ragninagpal@gmail.com>    
+Date:   Mon Nov 24 15:02:31 2025 +0530
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit ((d0777df...))
+$ git branch
+* (HEAD detached at d0777df)
+  master
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit ((d0777df...))
+$ git checkout master
+Switched to branch 'master'
+M       index.js
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (master)
+$
+ *  History restored 
+
+
+ *  History restored 
+
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (master)
+$ 
+ *  History restored 
+
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (master)
+$ git branch feat/user_routes
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (master)
+$ git branch
+  feat/user_routes
+* master
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (master)
+$ git checkout feat/user_routes 
+Switched to branch 'feat/user_routes'
+M       index.js
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (feat/user_routes)
+$ git branch
+* feat/user_routes
+  master
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (feat/user_routes)
+$ git checkout -b feat/blog_routes
+Switched to a new branch 'feat/blog_routes'
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (feat/blog_routes)
+$ git branch
+* feat/blog_routes
+  feat/user_routes
+  master
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (feat/blog_routes)
+$ git branch -d feat/
+feat/blog_routes   feat/user_routes 
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (feat/blog_routes)
+$ git branch -d feat/
+feat/blog_routes   feat/user_routes 
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (feat/blog_routes)
+$ git branch -d feat/blog_routes
+error: cannot delete branch 'feat/blog_routes' used by worktree at 'C:/Users/hp/Desktop/LearnGit'
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (feat/blog_routes)
+$ git checkout master
+Switched to branch 'master'
+M       index.js
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (master)
+$ git branch -d faet/blog_routes
+error: branch 'faet/blog_routes' not found
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (master)
+$ git branch
+  feat/blog_routes
+  feat/user_routes
+* master
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (master)
+$ git branch -d feat/blog_routes
+Deleted branch feat/blog_routes (was d0777df).
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (master)
+$ git branch -M main
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (main)
+$ git branch
+  feat/user_routes
+* main
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (main)
+$ git checkout -b feat/blog_routes
+Switched to a new branch 'feat/blog_routes'
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (feat/blog_routes)
+$ git status
+On branch feat/blog_routes
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        node_modules/
+        package-lock.json
+        package.json
+        routes/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (feat/blog_routes)
+$ git add index.js
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (feat/blog_routes)
+$ git add routes/
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (feat/blog_routes)
+$ git status
+On branch feat/blog_routes
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.js
+        new file:   routes/blog.router.js      
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        node_modules/
+        package-lock.json
+        package.json
+
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (feat/blog_routes)
+$ git commit -m "Blog route created"
+[feat/blog_routes 1655a16] Blog route created
+ 2 files changed, 19 insertions(+), 3 deletions(-)
+ create mode 100644 routes/blog.router.js      
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (feat/blog_routes)
+$ git checkout main
+Switched to branch 'main'
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (main)
+$ git checkout feat/user_route
+error: pathspec 'feat/user_route' did not match any file(s) known to git
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (main)
+$ git checkout feat/
+feat/blog_routes   feat/user_routes 
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (main)
+$ git checkout feat/
+feat/blog_routes   feat/user_routes 
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (main)
+$ git checkout main
+Already on 'main'
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (main)
+$ git branch
+  feat/blog_routes
+  feat/user_routes
+* main
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (main)
+$ git log main..feat/blog_routes
+commit 1655a16b6e2988d9ea7c542d91ac3ca7ddcc46b9 (feat/blog_routes)
+Author: RagniNagpal <ragninagpal@gmail.com>    
+Date:   Tue Nov 25 14:26:49 2025 +0530
+
+    Blog route created
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (main)
+$ git merge feat/blog_routes
+Auto-merging index.js
+CONFLICT (content): Merge conflict in index.js    
+Automatic merge failed; fix conflicts and then commit the result.
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (main|MERGING)
+$
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (main|MERGING)
+$ git merge main
+Already up to date.
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (main)
+$ git add index.js
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (main)
+$ git commit -m "Merge feat/blog_routes into main, resolved conflicts"
+[main 94742b3] Merge feat/blog_routes into main, resolved conflicts
+ 1 file changed, 2 insertions(+), 1 deletion(-)   
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+hp@LAPTOP-NCJ3OSQO MINGW64 ~/Desktop/LearnGit (main)
+$
+
+
+
+
+github:->
+
+remote(ithub), local(git)
+Terminalogy>
+1. remote
+2. origin remote repo short name
+
+
+
+
+//collaboration
+git clone - all commit history
+
+
+switched to main
+git pull origin main
+1. fetch + merge = pull 
+the switch to branch <blog_routes>
+git merge main
+resolve conflict is any
+than do ur work
+
+push your brach to origin
