@@ -1,0 +1,44 @@
+1. Unit testing: when you test a single individual isolated function ko test and mock karte hai any external service if present
+2. Integration testing:external service ko issi mei test  without mocking (mock karke value written kuch kuch call nhi karna pahele hi value return) any external service
+3. System testing
+
+npm i jest
+
+function sum(a,b){
+  return a+b;
+}
+
+module.exports=sum;
+
+const sum=require("./sum");
+
+test("sum of 2 and 3 is 5",()=>{
+  expect(sum(2,3)).toBe(5);
+})
+
+{
+  "name": "testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "jest": "^30.2.0"
+  }
+}
+npm run test
+
+
+
+testing karte time no server run export and use in different
+
+req bhejne ke liye supertest library
+
+
+test or it is same kuch bhi likhlo
