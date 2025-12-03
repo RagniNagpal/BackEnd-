@@ -1,0 +1,10 @@
+integration testing
+
+database start url genaeate connection done .connect
+before all test iske saath connection bnao (mongodb memory server)
+after each test.....jitna data insert/delete data ko delete (memory bhar jaegiiii)
+after this disconnect then database stop and connection disconnect
+beforeAll()---> connection---> insert--> each--->afterall
+
+
+npm i mongodb-memory-server
